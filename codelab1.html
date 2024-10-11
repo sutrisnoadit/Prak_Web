@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitungan Hitungan</title>
+</head>
+<body>
+<form onsubmit="count(event)">
+    <p>Angka 1</p>
+    <input type="number" id="angka1">
+    <p>Angka 2</p>
+    <input type="number"  id="angka2">
+    <input type="submit">
+</form>
+<div id="hsl"></div>
+<script>
+    function count(event){
+        event.preventDefault();
+        var angka1 = document.getElementById('angka1').value;
+        var angka2 = document.getElementById('angka2').value;
+        var hasil = parseInt(angka1)+parseInt(angka2);
+        document.getElementById('hsl').innerHTML = "Hasil : " + hasil;
+    }
+</script>
+</body>
+</html>
